@@ -19,8 +19,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "importsNotUsedAsValues": "error"
+    "jsx": "react-jsx"
+    // "importsNotUsedAsValues": "error"
     // TODO: undo these temp changes below
     // "noUnusedParameters": true,
     // "noUnusedLocals": true
