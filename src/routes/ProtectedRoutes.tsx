@@ -7,8 +7,7 @@ type Props = {
 };
 
 const ProtectedRoutes: React.FC<Props> = ({ user }) => {
-  //
-  if (user) {
+  if (!user) {
     return <Navigate to={appRoutes.auth} />;
   }
 

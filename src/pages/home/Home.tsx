@@ -1,7 +1,9 @@
 import CreateGoalModal from '@/components/feature/goals/CreateGoalModal';
+import { appRoutes } from '@/routes/appRoutes';
 import { useState } from 'react';
 import { GiStairsGoal } from 'react-icons/gi';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { useNavigate } from 'react-router-dom';
 
 const profilePic = 'https://lh3.googleusercontent.com/a/AEdFTp4o7w64q5Pxne5Qhd2dgn_l7gZb0Ql-fHqDfn_gwQ=s96-c';
 
@@ -10,6 +12,9 @@ const Home = () => {
   const onClose = () => {
     setIsAddGoalModalOpen(false);
   };
+
+  // navigate
+  const navigate = useNavigate();
 
   return (
     <div className='bg-slate-600 h-full py-3 flex flex-col items-start'>
@@ -31,6 +36,9 @@ const Home = () => {
           src={profilePic}
           alt={'Manish Mandal'}
           className='rounded-full w-12  ring-2 ring-emerald-400/20  '
+          onClick={() => {
+            navigate(appRoutes.myAccount);
+          }}
         />
       </div>
       {/* bmi */}
