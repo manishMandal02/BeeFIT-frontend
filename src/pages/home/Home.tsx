@@ -1,7 +1,7 @@
 import CreateGoalModal from '@/components/feature/goals/CreateGoalModal';
 import { useState } from 'react';
-import { BsArrowRight } from 'react-icons/Bs';
 import { GiStairsGoal } from 'react-icons/gi';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const profilePic = 'https://lh3.googleusercontent.com/a/AEdFTp4o7w64q5Pxne5Qhd2dgn_l7gZb0Ql-fHqDfn_gwQ=s96-c';
 
@@ -57,7 +57,7 @@ const Home = () => {
         {/* heading */}
         <div className='flex items-center justify-between '>
           <p className='text-2xl tracking-wider font-bold text-start ml-2 text-slate-200'>Goals 🎯</p>
-          <BsArrowRight className='text-white mr-2 scale-125' size={20} />
+          <HiArrowNarrowRight className='text-white mr-2 scale-125' size={20} />
         </div>
         {/* goals list */}
         <button
@@ -74,7 +74,7 @@ const Home = () => {
           <p className='text-2xl tracking-wide font-semibold text-start ml-1 text-slate-200'>
             Ai Suggestion 🤖
           </p>
-          <BsArrowRight className='text-white mr-2 scale-125' size={20} />
+          <HiArrowNarrowRight className='text-white mr-2 scale-125' size={20} />
         </div>
         {/* goals list */}
         <p className='mt-2 text-left bg-primary rounded-md px-4 font-sans py-3'>
