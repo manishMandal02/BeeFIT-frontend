@@ -8,14 +8,23 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "importsNotUsedAsValues": "error"
+    // TODO: undo these temp changes below
+    // "noUnusedParameters": true,
+    // "noUnusedLocals": true
   },
-  "include": ["src"],
+  "include": ["src", "src/components/common/layout/OnboardingLayout.tsx/.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
