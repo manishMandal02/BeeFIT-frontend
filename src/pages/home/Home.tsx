@@ -1,5 +1,5 @@
 import CreateGoalModal from '@/components/feature/goals/CreateGoalModal';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BsArrowRight } from 'react-icons/Bs';
 import { GiStairsGoal } from 'react-icons/gi';
 
